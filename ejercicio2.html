@@ -12,10 +12,32 @@
 	<p id="parrafo">Culpa placeat cum enim inventore asperiores unde sit fugiat ea aliquam modi esse nostrum magni, eum, repellendus sint at aperiam hic dolorum!</p>
 	<span class="mensaje"></span>
 	<img src="http://lorempixel.com/output/city-q-c-301-301-9.jpg" alt="" class="mensaje">
+	<p id="parrafoUltimo"></p>
 
 
 	<script>
 		//Escribe aquí tu código Javascript
+		
+		var claseMensaje = document.getElementsByClassName("mensaje");
+		var numeroMensaje = claseMensaje.length;
+
+		
+
+
+		function function_name (argument) {
+			// body...
+			if (numeroMensaje == 1)
+			{
+				document.getElementById("parrafoUltimo").innerHTML = "Es muy poco";
+			} else if ( numeroMensaje >= 2 && numeroMensaje < 4) {
+				document.getElementById("parrafoUltimo").innerHTML = "No está mal";
+			} else if (numeroMensaje >= 4 ) {
+				document.getElementById("parrafoUltimo").innerHTML = "Son muchos!";
+			}
+		}
+			
+		function_name();
+		
 	</script>
 </body>
 </html>
